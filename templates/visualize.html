@@ -1,0 +1,14 @@
+<!-- templates/visualize.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Visualization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Inventory Visualization</h1>
+    <img src="{{ url_for('static', filename='inventory_plot.png') }}" alt="Inventory Chart">
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

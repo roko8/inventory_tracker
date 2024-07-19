@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Inventory Tracker</h1>
+    <nav>
+        <a href="{{ url_for('add_item') }}">Add Item</a> |
+        <a href="{{ url_for('view_inventory') }}">View Inventory</a> |
+        <a href="{{ url_for('visualize_inventory') }}">Visualize Inventory</a>
+    </nav>
+</body>
+</html>
